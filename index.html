@@ -19,12 +19,37 @@
       img {
         border: 0;
       }
+      /* Media Queries for Tablet */
+@media screen and (max-width: 768px) {
+  table {
+    width: 100%; /* Adjust table width for tablet screens */
+  }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 480px) {
+  table {
+    width: 100%; /* Adjust table width for mobile screens */
+  }
+}
       .wrapper {
         width: 100%;
         table-layout: fixed;
         background-color: #cccccc;
         padding-bottom: 40px;
       }
+      @media screen and (max-width: 768px) {
+  .wrapper {
+    padding-bottom: 20px; /* Adjust padding for tablet screens */
+  }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding-bottom: 10px; /* Adjust padding for mobile screens */
+  }
+}
 
       .main {
         margin: 0 auto;
@@ -35,6 +60,18 @@
         font-family: sans-serif;
         color: #4a4a4a;
       }
+      @media screen and (max-width: 768px) {
+  .main {
+    max-width: 80%; /* Adjust max-width for tablet screens */
+  }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 480px) {
+  .main {
+    max-width: 90%; /* Adjust max-width for mobile screens */
+  }
+}
 
       .two-columns {
         font-size: 0;
@@ -78,7 +115,7 @@
         color: #37cbbf;
       }
 
-      @media screen and (max-width: 600px) {
+      /* @media screen and (max-width: 600px) {
         .two-columns .padding {
           padding-right: 0 !important;
           padding-left: 0 !important;
@@ -88,7 +125,23 @@
           width: 300px !important;
           max-width: 300px !important;
         }
-      }
+      } */
+      /* Media Queries for Tablet */
+@media screen and (max-width: 768px) {
+  .two-columns .column {
+    max-width: 100%; /* Adjust max-width for tablet screens */
+  }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 480px) {
+  .two-columns {
+    padding: 20px 0; /* Adjust padding for mobile screens */
+  }
+  .two-columns .column {
+    max-width: 100%; /* Adjust max-width for mobile screens */
+  }
+}
     </style>
   </head>
   <body>
